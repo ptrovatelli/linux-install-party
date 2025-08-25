@@ -1,4 +1,23 @@
-[[_TOC_]]
+- [What is this project](#what-is-this-project)
+- [A apporter](#a-apporter)
+- [Vérification de la configuration matérielle](#vérification-de-la-configuration-matérielle)
+  - [Windows](#windows)
+  - [Linux](#linux)
+  - [Vérifications](#vérifications)
+- [Distribution](#distribution)
+  - [Choix de la distribution](#choix-de-la-distribution)
+  - [Télécharger la distribution](#télécharger-la-distribution)
+  - [Linux mint](#linux-mint)
+  - [Debian](#debian)
+- [Préparation de la clé USB](#préparation-de-la-clé-usb)
+  - [BalenaEtcher vs Rufus](#balenaetcher-vs-rufus)
+  - [BalenaEtcher](#balenaetcher)
+  - [Rufus](#rufus)
+- [Booter sur la clé USB](#booter-sur-la-clé-usb)
+- [Checklist de bon fonctionnement](#checklist-de-bon-fonctionnement)
+- [Dépannage](#dépannage)
+  - [Tiret blanc qui clignote / ne boot pas](#tiret-blanc-qui-clignote--ne-boot-pas)
+- [Plus d'infos](#plus-dinfos)
 
 # What is this project
 
