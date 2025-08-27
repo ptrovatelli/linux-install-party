@@ -11,33 +11,44 @@
   - [Debian](#debian)
 - [Préparation de la clé USB](#préparation-de-la-clé-usb)
   - [BalenaEtcher vs Rufus](#balenaetcher-vs-rufus)
-  - [BalenaEtcher](#balenaetcher)
   - [Rufus](#rufus)
+  - [BalenaEtcher](#balenaetcher)
 - [Booter sur la clé USB](#booter-sur-la-clé-usb)
-- [Checklist de bon fonctionnement](#checklist-de-bon-fonctionnement)
-- [Dépannage](#dépannage)
-  - [Tiret blanc qui clignote / ne boot pas](#tiret-blanc-qui-clignote--ne-boot-pas)
+- [Checklist de bon fonctionnement (en live USB)](#checklist-de-bon-fonctionnement-en-live-usb)
+- [Checklist de bon fonctionnement (après install)](#checklist-de-bon-fonctionnement-après-install)
+  - [Cas ubuntu](#cas-ubuntu)
+- [Post-install](#post-install)
+  - [Tuning des miroirs (mint)](#tuning-des-miroirs-mint)
 - [Plus d'infos](#plus-dinfos)
+  - [Dépannage](#dépannage)
+  - [Cheatsheet](#cheatsheet)
+  - [Autres sources d'info sur les linux install party](#autres-sources-dinfo-sur-les-linux-install-party)
 
 # What is this project
 
-Instructions (in French) for helping organizing linux install parties
+Instructions (in French) for helping organizing linux install parties. 
+
+The audience is windows users, thus the linux mint distro.
 
 # A apporter
 
 - Supports
-  - Quelques clé usb prêtes avec les distributions souhaitées
-  - Une clé USB avec [hirensbootcd](https://www.hirensbootcd.org/download/) si besoin de debugger ou mettre à jour le BIOS
-  - Uné clé USB avec [finnix](https://www.finnix.org/)
-    - [Exemples d'utilisation](https://cp.vcclhosting.com/index.php?rp=%2Fknowledgebase%2F15%2FUsing-Finnix-Rescue-CD-to-Rescue-Repair-or-Backup-Your-Linux-System.html&&systpl=hexa)
+  - Quelques clés usb prêtes avec les distributions souhaitées
+  - Une clé USB avec [hirensbootcd](https://www.hirensbootcd.org/download/) si besoin de debugger ou mettre à jour le BIOS (système Windows PE)
+  - Uné clé USB avec [finnix](https://www.finnix.org/) ([cheatsheet](CHEATSHEET.md#finnix))
 - Internet
   - Connexion WIFI avec un mot de passe pas trop long
   - Ou réseau 4G/5G + hotspot WIFI avec un téléphone
   - Idéalement une prise Ethernet en cas de souci de WIFI avec un poste (à défaut un équipement type répétiteur wifi avec une sortie ethernet)
 - Documentation pour les participants
   - Fiches programmes linux
+- Autres
+  - Ecouteurs (pour diagnostiquer problèmes de son)
+  
 
 # Vérification de la configuration matérielle
+
+A faire avant de commencer pour le choix de la distribution.
 
 ## Windows
 
@@ -71,23 +82,21 @@ Noter les caractéristiques:
 - 64-bits architecture amd64 ou intel64:
   - cpu >= dual core 1.6GB et RAM >= 4GB: **Linux mint mate** (estimation, pas de source officielle?)
   - sinon: **Linux mint xfce**
-- 32-bits architecture armhf : **Debian**
-  - Voir aussi les pré-requis: https://www.debian.org/releases/stable/armhf/ch02s01.en.html
-    - *Debian/armhf works only on newer 32-bit ARM processors which implement at least the ARMv7 architecture with version 3 of the ARM vector floating point specification (VFPv3).*
+- 32-bits architecture armhf ([avec l'architecture ARMv7 / VFPv3](https://www.debian.org/releases/stable/armhf/ch02s01.en.html)) : **Debian**
 
-- 64-bits autre architecture : voir https://www.debian.org/releases/stable/
-- 32-bits autre architecture: **pas de solution?**
+- 64-bits autres architectures : voir https://www.debian.org/releases/stable/
+- 32-bits autres architectures: **pas de solution?**
 
 ##  Télécharger la distribution
 
-## Linux mint
+### Linux mint
 
 - Lien de téléchargement **Mate**: https://linuxmint.com/edition.php?id=321
 - Lien de téléchargement **Xfce**: https://linuxmint.com/edition.php?id=320
 
-## Debian
+### Debian
 
-Préférer la distribution full "DVD" pas la netinst "CD". La netinst nécessite de re-télécharger des paquets et ça ne fonctionne pas forcément sur WIFI! Attention la distribution full pèse plus de 4GB  (4.4GB en 13.0.0)
+Préférer la distribution full "DVD" pas la netinst "CD". La netinst nécessite de re-télécharger des paquets et ça ne fonctionne pas forcément sur WIFI. Attention la distribution full pèse plus de 4GB  (4.4GB en 13.0.0)
 
 **Lien de téléchargement debian 32-bits armhf:** https://cdimage.debian.org/debian-cd/current/armhf/iso-dvd/
 
@@ -97,13 +106,9 @@ Préférer la distribution full "DVD" pas la netinst "CD". La netinst nécessite
 
 Utiliser Etcher ou Rufus:
 
-- Etcher est plus simple d'usage
+- Etcher est plus simple d'usage (mais parfois moins stable?)
 
 - Rufus a plus d'options et est plus léger
-
-## BalenaEtcher
-
-https://etcher.balena.io/#download-etcher
 
 ## Rufus
 
@@ -114,6 +119,10 @@ https://rufus.ie/fr/
   - Préférer *MBR* pendant encore quelques années (compatible BIOS et UEFI)
 - Système de fichiers: FAT32
 - Popup à la fin mode ISO vs DD : choisir ISO (?)
+
+## BalenaEtcher
+
+https://etcher.balena.io/#download-etcher
 
 # Booter sur la clé USB
 
@@ -139,7 +148,7 @@ https://rufus.ie/fr/
 
 [Ref](https://pendrivelinux.com/how-to-access-bios/)
 
-# Checklist de bon fonctionnement
+# Checklist de bon fonctionnement (en live USB)
 
 - Imprimante/scanner: vérifier qu'il existe des drivers pour linux sur la base de la marque/modèle
 - Touchpad
@@ -148,25 +157,54 @@ https://rufus.ie/fr/
 - Accéder à un site internet en https (ex `https://google.com`)
 - Carte son: jouer une vidéo sur youtube
 - GPU:
-  - Vérifier que la carte graphique apparait dans hardinfo
+  - Vérifier que la carte graphique apparait dans hardinfo (installer hardinfo)
   - Faire bouger rapidement une fenêtre.
   - Dans le doute faire un test avec [furmark](https://www.materiel.net/guide-achat/g8-les-cartes-graphiques/10006/)
-- Mise en veille: mettre l'ordinateur en veille. S'assurer que le disque dur ne tourne plus (au bruit). Sortir l'ordinateur de la veille.
-- Vérification que les sources de logiciels sont bien tous cochés
+- Mise en veille: mettre l'ordinateur en veille. S'assurer que le disque dur ne tourne plus / que le système n'est plus sous tension (au bruit). Sortir l'ordinateur de la veille.
 - Bluetooth (si besoin)
 - Lecteur de carte SD (si besoin)
 
-# Dépannage
+# Checklist de bon fonctionnement (après install)
 
-## Tiret blanc qui clignote / ne boot pas
+Refaire une passe rapide sur les vérifications déjà faite en live USB
 
-Au moment de booter sur la clé, rien ne s'affiche à part un tiret blanc qui clignote. Ca indique un plantage très tôt dans le lancement. Peut-être une incompatibilité d'architecture de CPU avec la distribution de la clé usb
+## Cas ubuntu
 
-Autres pistes: 
+Vérifier que les sources de logiciels sont bien toutes cochées : 
 
-- Assurez-vous que le BIOS est en UEFI si disponible (pas en Legacy)
-- Désactiver le Secure Boot, désactiver les « Windows Optimized Defaults » ou d’autres options similaires.
+- Menu / Logiciels et mises à jour / Logiciels ubuntu
+  - Logiciel libre et open source maintenu par Canonical (main)
+  - Logiciel libre et open source maintenu par la communauté (universe)
+  - Pilotes propriétaires de périphériques (restricted)
+  - Logiciels restreintes par des droits d'auteur ou des questions juridiques (multiverse)
+
+et choisir : télécharger depuis : Serveur pour France
+
+# Post-install
+
+## Tuning des miroirs (mint)
+
+- Menu / Sources de logiciels
+  - Principal et base: pointer sur des miroirs plus proches géographiquement
+
+## Mises à jour
+
+Mettre à jour et rebooter.
+
+## Installation logiciels supplémentaires
+
+TODO
 
 # Plus d'infos
+
+## Dépannage
+
+cf [Dépannage](TROUBLESHOOTING.md)
+
+## Cheatsheet
+
+cf [Cheatsheet](CHEATSHEET.md)
+
+## Autres sources d'info sur les linux install party
 
 Voir aussi [cette page](https://docs.lacontrevoie.fr/activites/ateliers/install-party/) qui est très bien faite
