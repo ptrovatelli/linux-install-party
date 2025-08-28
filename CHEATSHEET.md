@@ -24,29 +24,49 @@ NB: certains éléments ne seront pas modifiés avant une re-ouverture de sessio
 
 # Finnix
 
+## Intro
+
 [Ref](https://cp.vcclhosting.com/index.php?rp=%2Fknowledgebase%2F15%2FUsing-Finnix-Rescue-CD-to-Rescue-Repair-or-Backup-Your-Linux-System.html&&systpl=hexa)
 
-Plutôt pour manipuler un système linux que Windows
+Permet de dépanner un système linux
 
-Exemples: 
+Exemples (il faut d'abord trouver la bonne partition...): 
 
-- Mot de passe root oublié
+## Trouver la bonne partition
 
 ```
-mount /dev/vda1 /mnt 
+mount /dev/sda3 /mnt 
+ls /mnt/home
+```
+
+## Mot de passe root oublié
+
+```
+mount /dev/sda3 /mnt 
 chroot /mnt passwd
 ```
 
-- Vérifier et réparer le disque
+## Vérifier et réparer le disque
 
 ```
-fsck -y /dev/vda1
+fsck -y /dev/sda3
 ```
 
-- Regarder le contenu du disque
+## Analyse hardware
 
-```
-mount /dev/vda1 /mnt 
-cd /mnt
-```
+Au boot, on peut faire une détection des composants hardware (cpu, ram, disques...) en selectionnant *utilities*, puis *Hardware detection tool*
 
+Permet notamment de vérifier si le disque est partitionné en MBR ou GPT
+
+Attendu après l'installation linux mint en version 22:
+
+- MBR: Grub 2
+- Partition 1:  type: GPT
+
+=> la partition est de type GPT mais il y a aussi un MBR installé pour les systèmes legacy
+
+Si ce n'est pas le cas, c'est que l'installation du planter avant d'arriver à son terme.
+
+
+
+Il y a également un utilitaire d'analyse de RAM (memtest)
