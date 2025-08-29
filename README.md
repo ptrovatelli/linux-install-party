@@ -179,7 +179,14 @@ https://etcher.balena.io/#download-etcher
 
 Refaire une passe rapide sur les vérifications déjà faite en live USB
 
-## Cas ubuntu
+# Post-install
+
+## Tuning des miroirs (mint)
+
+- Menu / Sources de logiciels
+  - Principal et base: pointer sur des miroirs plus proches géographiquement
+
+## Vérification des sources logicielles (ubuntu)
 
 Vérifier que les sources de logiciels sont bien toutes cochées : 
 
@@ -190,13 +197,6 @@ Vérifier que les sources de logiciels sont bien toutes cochées :
   - Logiciels restreintes par des droits d'auteur ou des questions juridiques (multiverse)
 
 et choisir : télécharger depuis : Serveur pour France
-
-# Post-install
-
-## Tuning des miroirs (mint)
-
-- Menu / Sources de logiciels
-  - Principal et base: pointer sur des miroirs plus proches géographiquement
 
 ## Mises à jour
 
