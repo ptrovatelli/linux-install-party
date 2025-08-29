@@ -1,3 +1,7 @@
+# Problèmes connus
+
+Voir si des problèmes sont connus avec le matériel qui dysfonctionne: [hardware support wiki](https://wiki.ubuntu.com/HardwareSupport/)
+
 # Boot
 
 ## Tiret blanc qui clignote / ne boot pas
@@ -18,3 +22,5 @@ Autres pistes:
 - Ouvrir alsamixer et essayer différents canaux
 
 - Essayer avec des écouteurs (souci carte son vs souci hauts-parleurs)
+
+Plus d'infos: [Problèmes de sons sous Ubuntu](https://doc.ubuntu-fr.org/son_problemes)
