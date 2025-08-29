@@ -46,6 +46,14 @@ The audience is windows users, thus the linux mint distro.
   - Ecouteurs (pour diagnostiquer problèmes de son)
   
 
+# Vérification des problèmes connus
+
+Vérifier si des problèmes sont connus sur ubuntu avec ce matériel:
+
+- [Ordinateur portable testés sous Ubuntu (fr)](https://doc.ubuntu-fr.org/portable)
+- [Hardware Support Wiki - desktops (en)](https://wiki.ubuntu.com/HardwareSupportMachinesDesktops)
+- [Hardware Support Wiki - laptops (en)](https://wiki.ubuntu.com/HardwareSupport/Machines/Laptops?action=show&redirect=HardwareSupportMachinesLaptops)
+
 # Vérification de la configuration matérielle
 
 A faire avant de commencer pour le choix de la distribution.
@@ -150,7 +158,7 @@ https://etcher.balena.io/#download-etcher
 
 # Checklist de bon fonctionnement (en live USB)
 
-- Imprimante/scanner: vérifier qu'il existe des drivers pour linux sur la base de la marque/modèle
+- Imprimante/scanner: vérifier qu'il existe des drivers pour linux sur la base de la marque/modèle [et si des problèmes sont connus](https://wiki.ubuntu.com/HardwareSupport/)
 - Touchpad
 - Accès internet en WIFI
 - Accès internet en ethernet (si possible)
