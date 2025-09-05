@@ -206,6 +206,10 @@ Mettre à jour et rebooter.
 
 TODO
 
+## Import des données
+
+cf [import des données](IMPORT_DONNES.md)
+
 # Plus d'infos
 
 ## Dépannage
