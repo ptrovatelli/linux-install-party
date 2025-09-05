@@ -22,6 +22,7 @@
   - [Vérification des sources logicielles (ubuntu)](#vérification-des-sources-logicielles-ubuntu)
   - [Mises à jour](#mises-à-jour)
   - [Installation logiciels supplémentaires](#installation-logiciels-supplémentaires)
+  - [Import des données](#import-des-données)
 - [Plus d'infos](#plus-dinfos)
   - [Dépannage](#dépannage)
   - [Cheatsheet](#cheatsheet)
