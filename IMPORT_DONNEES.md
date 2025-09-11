@@ -6,7 +6,9 @@ Cf https://support.mozilla.org/fr/kb/importer-favoris-chrome "Importer les mots 
 
 ## Importer les favoris (html)
 
-Suivre la procédure https://support.mozilla.org/fr/kb/importer-marque-pages-fichier-html (à tester)
+Suivre la procédure https://support.mozilla.org/fr/kb/importer-marque-pages-fichier-html
+
+Déplacer les favoris dans la barre principale des favoris si besoin ("Barre personnelle" ou "Bookmarks toolbar")
 
 # Depuis firefox
 
