@@ -70,3 +70,13 @@ Si ce n'est pas le cas, c'est que l'installation du planter avant d'arriver à s
 
 
 Il y a également un utilitaire d'analyse de RAM (memtest)
+
+# Scanners et imprimantes sur ubuntu
+
+## Scanners
+
+https://doc.ubuntu-fr.org/scanner
+
+## Imprimantes
+
+https://doc.ubuntu-fr.org/imprimante

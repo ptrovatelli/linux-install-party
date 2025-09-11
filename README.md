@@ -162,7 +162,10 @@ https://etcher.balena.io/#download-etcher
 
 # Checklist de bon fonctionnement (en live USB)
 
-- Imprimante/scanner: vérifier qu'il existe des drivers pour linux sur la base de la marque/modèle [et si des problèmes sont connus](https://wiki.ubuntu.com/HardwareSupport/)
+- Imprimante/scanner
+  - Pour les scanners, vérifier s'ils sont dans la [liste des scanners connus pour bien fonctionner avec SANE](http://www.sane-project.org/sane-mfgs.html#SCANNERS)
+  - Vérifier si des problèmes sont connus pour cette marque/modèle [sur le wiki ubuntu](https://wiki.ubuntu.com/HardwareSupport/)
+
 - Touchpad
 - Accès internet en WIFI
 - Accès internet en ethernet (si possible)
