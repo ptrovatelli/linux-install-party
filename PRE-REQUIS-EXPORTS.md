@@ -1,3 +1,11 @@
+- [Chrome](#chrome)
+  - [Export des mots de passe](#export-des-mots-de-passe)
+    - [Mots de passe stockés sur le compte google](#mots-de-passe-stockés-sur-le-compte-google)
+    - [Mots de passe stockés sur le navigateur (csv)](#mots-de-passe-stockés-sur-le-navigateur-csv)
+  - [Export des favoris (html)](#export-des-favoris-html)
+- [Firefox](#firefox)
+  - [Export des mots de passe (csv)](#export-des-mots-de-passe-csv)
+  - [Export des favoris (html)](#export-des-favoris-html-1)
 # Chrome
 
 ## Export des mots de passe
