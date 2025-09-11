@@ -14,7 +14,7 @@
 
 Pas la peine de les exporter. **Assurez-vous de connaitre le mot de passe de votre compte google si vos mots passe sont stockés sur votre compte google**
 
-On peut vérifier les mots de passe enregistrés sur https://passwords.google.com/?ep=1&pli=1
+On peut vérifier les mots de passe enregistrés sur [le site dédié de google](https://passwords.google.com/?ep=1&pli=1)
 
 ### Mots de passe stockés sur le navigateur (csv)
 
@@ -30,14 +30,14 @@ Ils peuvent être ou pas les mêmes que ceux stockés sur le compte google en fo
 
 ## Export des favoris (html)
 
-Suivez cette procédure: https://lecrabeinfo.net/tutoriels/google-chrome-exporter-ses-favoris/#exporter-ses-favoris-de-google-chrome
+Suivez [cette procédure ](https://lecrabeinfo.net/tutoriels/google-chrome-exporter-ses-favoris/#exporter-ses-favoris-de-google-chrome)
 
 # Firefox
 
 ## Export des mots de passe (csv)
 
-Suivez cette procédure: https://support.mailinblack.com/fr/articles/143374-exporter-les-mots-de-passe-sur-firefox
+Suivez [cette procédure](https://support.mailinblack.com/fr/articles/143374-exporter-les-mots-de-passe-sur-firefox)
 
 ## Export des favoris (html)
 
-Suivez cette procédure: https://support.mozilla.org/fr/kb/exporter-marque-pages-firefox-fichier-html
+Suivez [cette procédure](https://support.mozilla.org/fr/kb/exporter-marque-pages-firefox-fichier-html)
