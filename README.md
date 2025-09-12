@@ -52,11 +52,26 @@ The audience is windows users, thus the linux mint distro.
 
 # Vérification des problèmes connus
 
-Vérifier si des problèmes sont connus sur ubuntu avec ce matériel:
+Vérifier si des problèmes sont connus sur ubuntu avec ce matériel
 
-- [Ordinateur portable testés sous Ubuntu (fr)](https://doc.ubuntu-fr.org/portable)
-- [Hardware Support Wiki - desktops (en)](https://wiki.ubuntu.com/HardwareSupportMachinesDesktops)
-- [Hardware Support Wiki - laptops (en)](https://wiki.ubuntu.com/HardwareSupport/Machines/Laptops?action=show&redirect=HardwareSupportMachinesLaptops)
+- Portables
+
+| Site                                                         | Notes                                                        |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [Ordinateur portable testés sous Ubuntu (fr)](https://doc.ubuntu-fr.org/portable) | Liste assez conséquente avec des versions ubuntu plutôt récentes |
+| [Portables certifiés par canonical](https://ubuntu.com/certified/laptops) | L'idéal est d'être dans cette liste mais il n'y a pas toutes les marques / tous les portables |
+| [Hardware Support Wiki - laptops (en)](https://wiki.ubuntu.com/HardwareSupport/Machines/Laptops?action=show&redirect=HardwareSupportMachinesLaptops) | Liste assez conséquente mais avec des versions ubuntu anciennes (liste plus mise à jour) |
+| [Laptop testing old reports](https://wiki.ubuntu.com/Testing/Laptop/OldReports) | Petite liste plus mise à jour                                |
+|                                                              |                                                              |
+
+- Tours
+
+| Site                                                         | Notes                                                        |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [Tours certifiées par canonical](https://ubuntu.com/certified/desktops) | L'idéal est d'être dans cette liste mais il n'y a pas toutes les marques / toutes les tours |
+| [Hardware Support Wiki - desktops (en)](https://wiki.ubuntu.com/HardwareSupportMachinesDesktops) | Liste moyenne avec des versions ubuntu anciennes (liste plus mise à jour) |
+
+Voir aussi [la page d'accueil du support hardware (anglophone)](https://wiki.ubuntu.com/HardwareSupport/)
 
 # Vérification de la configuration matérielle
 
