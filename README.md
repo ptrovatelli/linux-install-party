@@ -208,7 +208,8 @@ Mettre à jour et rebooter.
 
 ## Installation logiciels supplémentaires
 
-TODO
+- Si besoin d'utiliser un scanner: xsane
+- [Teamviewer quicksupport](https://www.teamviewer.com/fr/download/linux/)
 
 ## Import des données
 

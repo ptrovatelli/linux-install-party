@@ -34,6 +34,15 @@ Exemples (il faut d'abord trouver la bonne partition...):
 
 ## Trouver la bonne partition
 
+Trouver le bon disque / la bonne partition
+
+```
+lshw -class disk
+lsblk
+```
+
+Monter le disque et vérifier le contenu du répertoire /home:
+
 ```
 mount /dev/sda3 /mnt 
 ls /mnt/home
