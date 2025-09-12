@@ -24,3 +24,9 @@ Autres pistes:
 - Essayer avec des écouteurs (souci carte son vs souci hauts-parleurs)
 
 Plus d'infos: [Problèmes de sons sous Ubuntu](https://doc.ubuntu-fr.org/son_problemes)
+
+# Plantage interface graphique Xorg / Wayland
+
+Basculer vers un tty avec ctrl + alt + F1 à F6 pour voir les logs sous `/var/log`
+
+Revenir vers le bureau avec ctrl + alt + F7
