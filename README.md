@@ -51,6 +51,7 @@ The audience is windows users, thus the linux mint distro.
   - Fiches programmes linux
 - Autres
   - Ecouteurs (pour diagnostiquer problèmes de son)
+  - Ecran, clavier, souris (si des desktops sont prévus)
   
 
 # Vérification des problèmes connus
@@ -80,6 +81,8 @@ Vérifier si des problèmes sont connus sur ubuntu avec ce matériel
 | -------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | Scanners             | [liste des scanners connus pour bien fonctionner avec SANE](http://www.sane-project.org/sane-mfgs.html#SCANNERS) |                                                              |
 | Imprimantes/scanners | [Hardware Support Wiki](https://wiki.ubuntu.com/HardwareSupport/) | La liste n'est plus mise à jour et les tests ont été faits sur des versions ubuntu très anciennes, mais on peut y jeter un oeil (si ça marchait alors, ça devrait toujours marcher) |
+
+Voir aussi: https://doc.ubuntu-fr.org/imprimante
 
 # Vérification de la configuration matérielle
 
