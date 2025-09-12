@@ -1,6 +1,9 @@
 - [What is this project](#what-is-this-project)
 - [A apporter](#a-apporter)
 - [Vérification des problèmes connus](#vérification-des-problèmes-connus)
+  - [Laptop](#laptop)
+  - [Desktop](#desktop)
+  - [Imprimantes / scanners](#imprimantes--scanners)
 - [Vérification de la configuration matérielle](#vérification-de-la-configuration-matérielle)
   - [Windows](#windows)
   - [Linux](#linux)
@@ -54,7 +57,7 @@ The audience is windows users, thus the linux mint distro.
 
 Vérifier si des problèmes sont connus sur ubuntu avec ce matériel
 
-- Portables
+## Laptop
 
 | Site                                                         | Notes                                                        |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -64,14 +67,19 @@ Vérifier si des problèmes sont connus sur ubuntu avec ce matériel
 | [Laptop testing old reports](https://wiki.ubuntu.com/Testing/Laptop/OldReports) | Petite liste plus mise à jour                                |
 |                                                              |                                                              |
 
-- Tours
+## Desktop
 
 | Site                                                         | Notes                                                        |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | [Tours certifiées par canonical](https://ubuntu.com/certified/desktops) | L'idéal est d'être dans cette liste mais il n'y a pas toutes les marques / toutes les tours |
 | [Hardware Support Wiki - desktops (en)](https://wiki.ubuntu.com/HardwareSupportMachinesDesktops) | Liste moyenne avec des versions ubuntu anciennes (liste plus mise à jour) |
 
-Voir aussi [la page d'accueil du support hardware (anglophone)](https://wiki.ubuntu.com/HardwareSupport/)
+## Imprimantes / scanners
+
+| Objet                | Site                                                         | Notes                                                        |
+| -------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Scanners             | [liste des scanners connus pour bien fonctionner avec SANE](http://www.sane-project.org/sane-mfgs.html#SCANNERS) |                                                              |
+| Imprimantes/scanners | [Hardware Support Wiki](https://wiki.ubuntu.com/HardwareSupport/) | La liste n'est plus mise à jour et les tests ont été faits sur des versions ubuntu très anciennes, mais on peut y jeter un oeil (si ça marchait alors, ça devrait toujours marcher) |
 
 # Vérification de la configuration matérielle
 
@@ -176,10 +184,6 @@ https://etcher.balena.io/#download-etcher
 [Ref](https://pendrivelinux.com/how-to-access-bios/)
 
 # Checklist de bon fonctionnement (en live USB)
-
-- Imprimante/scanner
-  - Pour les scanners, vérifier s'ils sont dans la [liste des scanners connus pour bien fonctionner avec SANE](http://www.sane-project.org/sane-mfgs.html#SCANNERS)
-  - Vérifier si des problèmes sont connus pour cette marque/modèle [sur le wiki ubuntu](https://wiki.ubuntu.com/HardwareSupport/)
 
 - Touchpad
 - Accès internet en WIFI
