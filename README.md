@@ -51,7 +51,7 @@ The audience is windows users, thus the linux mint distro.
   - Fiches programmes linux
 - Autres
   - Ecouteurs (pour diagnostiquer problèmes de son)
-  - Ecran, clavier, souris (si des desktops sont prévus)
+  - Ecran, clavier, souris, cable HDMI, cable VGA
   
 
 # Vérification des problèmes connus
@@ -198,6 +198,7 @@ https://etcher.balena.io/#download-etcher
   - Faire bouger rapidement une fenêtre.
   - Dans le doute faire un test avec [furmark](https://www.materiel.net/guide-achat/g8-les-cartes-graphiques/10006/)
 - Mise en veille: mettre l'ordinateur en veille. S'assurer que le disque dur ne tourne plus / que le système n'est plus sous tension (au bruit). Sortir l'ordinateur de la veille.
+- Brancher un moniteur externe (HDMI ou VGA)
 - Bluetooth (si besoin)
 - Lecteur de carte SD (si besoin)
 

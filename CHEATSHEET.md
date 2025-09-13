@@ -63,7 +63,7 @@ fsck -y /dev/sda3
 
 ## Analyse hardware
 
-Au boot, on peut faire une détection des composants hardware (cpu, ram, disques...) en selectionnant *utilities*, puis *Hardware detection tool*
+Au boot, on peut faire une détection des composants hardware (cpu, ram, disques...) en sélectionnant *utilities*, puis *Hardware detection tool*
 
 Permet notamment de vérifier si le disque est partitionné en MBR ou GPT
 
@@ -79,6 +79,58 @@ Si ce n'est pas le cas, c'est que l'installation du planter avant d'arriver à s
 
 
 Il y a également un utilitaire d'analyse de RAM (memtest)
+
+# Grub
+
+## Entrer sur le menu grub
+
+Appuyer plusieurs fois sur la touche, ne pas maintenir.
+
+Si la touche est la même que pour les options de boot du bios, re-appuyer après être sorti des options de bios.
+
+- cas boot en mode bios (legacy): shift
+- cas boot en UEFI (matériel plus récent): esc
+
+## Modifier les options de boot
+
+[ref](https://doc.ubuntu-fr.org/kernel#modifier_les_parametres_du_noyau_pour_un_systeme_installe_sur_disque)
+
+- temporairement: Sélectionner le kernel voulu dans la liste du menu grub, puis appuyer sur e pour éditer les paramètres de lancement.
+- définitivement: éditer `/etc/default/grub` puis 
+
+```
+sudo update-grub
+```
+
+- depuis une session live voir [ici](https://doc.ubuntu-fr.org/kernel#modifier_les_parametres_du_noyau_pour_une_session-live)
+
+# Display / GPU
+
+## driver utilisé
+
+```
+lshw -c video
+```
+
+chercher la ligne "configuration". Le pilote chargé est préfixé par "driver=". Exemple:
+
+```
+configuration: driver=i915 latency=0
+```
+
+plus d'infos sur le driver: 
+
+```
+modinfo i915
+```
+
+ou
+
+```
+modinfo $(modprobe --resolve-alias i915)
+```
+
+[ref](https://askubuntu.com/questions/23238/how-can-i-find-what-video-driver-is-in-use-on-my-system)
 
 # Scanners et imprimantes sur ubuntu
 
