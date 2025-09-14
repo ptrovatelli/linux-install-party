@@ -104,6 +104,10 @@ sudo update-grub
 
 - depuis une session live voir [ici](https://doc.ubuntu-fr.org/kernel#modifier_les_parametres_du_noyau_pour_une_session-live)
 
+## Re-installer grub depuis une session live
+
+https://linuxmint-installation-guide.readthedocs.io/en/latest/multiboot.html
+
 # Display / GPU
 
 ## driver utilisé

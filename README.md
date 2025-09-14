@@ -52,6 +52,7 @@ The audience is windows users, thus the linux mint distro.
 - Autres
   - Ecouteurs (pour diagnostiquer problèmes de son)
   - Ecran, clavier, souris, cable HDMI, cable VGA
+  - Disque dur externe
   
 
 # Vérification des problèmes connus
@@ -140,7 +141,9 @@ Préférer la distribution full "DVD" pas la netinst "CD". La netinst nécessite
 
 # Préparation de la clé USB
 
-## BalenaEtcher vs Rufus
+## Sur windows
+
+### BalenaEtcher vs Rufus
 
 Utiliser Etcher ou Rufus:
 
@@ -148,19 +151,40 @@ Utiliser Etcher ou Rufus:
 
 - Rufus a plus d'options et est plus léger
 
-## Rufus
+### Rufus
 
 https://rufus.ie/fr/
 
 - Appuyer sur alt+E pour activer le mode dual UEFI/BIOS pour un maximum de compatibilité
 - Schéma de partition
   - Préférer *MBR* pendant encore quelques années (compatible BIOS et UEFI)
+  - Avancé / cocher "Ajouter les options de compatibilité pour vieux BIOS"
 - Système de fichiers: FAT32
-- Popup à la fin mode ISO vs DD : choisir ISO (?)
+- Popup à la fin mode ISO vs DD
+  - Pour mint: choisir ISO
+  - Pour debian: choisir DD (troubleshooting plantage sur "chargement des composants depuis le support d'installation")
 
-## BalenaEtcher
+
+### BalenaEtcher
 
 https://etcher.balena.io/#download-etcher
+
+## Sur linux
+
+- Linux mint:
+  - utiliser *Créateur de clé USB* (*USB image writer*) installé par défaut
+- Debian, Ubuntu: 
+  - balenas etcher. Use [zip file](https://etcher.balena.io/#download-etcher), not .deb
+
+# Vérifier la clé usb
+
+Si pas dejà fait (Etcher le fait)
+
+```
+md5sum -c mdsum.txt
+```
+
+(en cas d'erreur, un message apparait à la fin)
 
 # Booter sur la clé USB
 

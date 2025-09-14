@@ -15,6 +15,16 @@ Autres pistes:
 
 - Désactiver le Secure Boot, désactiver les « Windows Optimized Defaults » ou d’autres options similaires.
 
+# Problèmes durant l'installation
+
+## Debian n'arrive pas à charger les fichiers depuis le média d'installation
+
+La clé USB faite avec rufus boot bien et lance l'installation, mais lorsqu'il faut récupérer les fichiers sur la clé ça ne fonctionne pas sur l'étape "chargement des composants depuis le support d'installation"
+
+Solution: faire la clé en mode "dd" avec rufus au lieu de "iso" (popup après les options de configuration)
+
+
+
 # Son
 
 ## Pas de son
