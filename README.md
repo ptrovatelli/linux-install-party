@@ -121,6 +121,8 @@ Noter les caractéristiques:
 
 ## Choix de la distribution
 
+(c'est un choix de notre part de privilégier Linux mint, il y a bien sur plein d'autres choix valables qui ne sont pas listés ici)
+
 - 64-bits architecture amd64 ou intel64:
   - cpu >= dual core 1.6GB et RAM >= 4GB: **Linux mint mate** (estimation, pas de source officielle?)
   - sinon: **Linux mint xfce**
@@ -133,8 +135,7 @@ Noter les caractéristiques:
 
 ### Linux mint
 
-- Lien de téléchargement **Mate**: https://linuxmint.com/edition.php?id=321
-- Lien de téléchargement **Xfce**: https://linuxmint.com/edition.php?id=320
+- Lien de téléchargement **Mate** ou **Xfce**: https://linuxmint.com/download.php
 
 ### Debian
 
@@ -177,7 +178,7 @@ https://etcher.balena.io/#download-etcher
 - Linux mint:
   - utiliser *Créateur de clé USB* (*USB image writer*) installé par défaut
 - Debian, Ubuntu: 
-  - balenas etcher. Use [zip file](https://etcher.balena.io/#download-etcher), not .deb
+  - balenas etcher. Utiliser le fichier[zip file](https://etcher.balena.io/#download-etcher) qu'on décompresse pour utiliser sur place, pas le .deb (problèmes de dépendances)
 
 # Vérifier la clé usb
 
