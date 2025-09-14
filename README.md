@@ -225,7 +225,7 @@ md5sum -c mdsum.txt
   - Faire bouger rapidement une fenêtre.
   - Dans le doute faire un test avec [furmark](https://www.materiel.net/guide-achat/g8-les-cartes-graphiques/10006/)
 - Mise en veille: mettre l'ordinateur en veille. S'assurer que le disque dur ne tourne plus / que le système n'est plus sous tension (au bruit). Sortir l'ordinateur de la veille.
-- Brancher un moniteur externe (HDMI ou VGA)
+- Brancher un moniteur externe HDMI ou VGA (si besoin)
 - Bluetooth (si besoin)
 - Lecteur de carte SD (si besoin)
 

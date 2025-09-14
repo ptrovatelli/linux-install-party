@@ -30,8 +30,6 @@ NB: certains éléments ne seront pas modifiés avant une re-ouverture de sessio
 
 Permet de dépanner un système linux
 
-Exemples (il faut d'abord trouver la bonne partition...): 
-
 ## Trouver la bonne partition
 
 Trouver le bon disque / la bonne partition
