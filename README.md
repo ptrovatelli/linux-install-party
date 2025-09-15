@@ -7,6 +7,7 @@
 - [Vérification de la configuration matérielle](#vérification-de-la-configuration-matérielle)
   - [Windows](#windows)
   - [Linux](#linux)
+  - [Autre](#autre)
   - [Vérifications](#vérifications)
 - [Distribution](#distribution)
   - [Choix de la distribution](#choix-de-la-distribution)
@@ -103,6 +104,10 @@ Télécharger *speccy* de piriform dans le store microsoft
 sudo apt-get install hardinfo
 ```
 
+## Autre
+
+Si pas d'OS disponible (mot de passe oublié ou autre souci) on peut utiliser finnix ça démarrera plus vite qu'un live linux mint: cf [cheatsheet](CHEATSHEET.MD#analyse-hardware)
+
 ## Vérifications
 
 Noter les caractéristiques: 
@@ -111,7 +116,7 @@ Noter les caractéristiques:
   - Nombre de coeurs
   - Cadence
   - Architecture. La trouver depuis la marque + recherche internet si besoin. Les plus répandues
-    - AMD 64-bits, Intel 64-bits: x86_64 (support 64 bits à vérifier)
+    - AMD 64-bits, Intel 64-bits: x86_64
     - Intel i386, i586, i686: c'est x86 32-bits (très ancien)
 - RAM
   - Taille
@@ -272,8 +277,6 @@ cf [import des données](IMPORT_DONNEES.md)
 Configurer timeshift: 
 
 - mensuel, garder 2
-
-Lancer une sauvegarde manuellement.
 
 # Plus d'infos
 

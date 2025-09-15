@@ -30,6 +30,12 @@ NB: certains éléments ne seront pas modifiés avant une re-ouverture de sessio
 
 Permet de dépanner un système linux
 
+## Installation
+
+Il y a un petit bug sur la détection du matériel avec HDT sur finnix version. 
+
+Après avoir flashé la clé, télécharger le fichier [pci.ids](https://github.com/pciutils/pciids/blob/master/pci.ids) et le déposer sous `isolinux` pour avoir une détection correcte des périphériques PCI
+
 ## Trouver la bonne partition
 
 Trouver le bon disque / la bonne partition
@@ -63,6 +69,8 @@ fsck -y /dev/sda3
 
 Au boot, on peut faire une détection des composants hardware (cpu, ram, disques...) en sélectionnant *utilities*, puis *Hardware detection tool*
 
+### Disque
+
 Permet notamment de vérifier si le disque est partitionné en MBR ou GPT
 
 Attendu après l'installation linux mint en version 22:
@@ -74,7 +82,19 @@ Attendu après l'installation linux mint en version 22:
 
 Si ce n'est pas le cas, c'est que l'installation du planter avant d'arriver à son terme.
 
+### GPU
 
+La carte graphique se trouve dans les périphériques  PCI
+
+Ou bien lancer le live puis: 
+
+```
+lshw -c video
+```
+
+
+
+### Test de RAM
 
 Il y a également un utilitaire d'analyse de RAM (memtest)
 
