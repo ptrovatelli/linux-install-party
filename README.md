@@ -29,6 +29,7 @@
   - [Mises à jour](#mises-à-jour)
   - [Installation logiciels supplémentaires](#installation-logiciels-supplémentaires)
   - [Import des données](#import-des-données)
+  - [Configuration timeshift](#configuration-timeshift)
 - [Plus d'infos](#plus-dinfos)
   - [Dépannage](#dépannage)
   - [Cheatsheet](#cheatsheet)
@@ -265,6 +266,14 @@ Mettre à jour et rebooter.
 ## Import des données
 
 cf [import des données](IMPORT_DONNEES.md)
+
+## Configuration timeshift
+
+Configurer timeshift: 
+
+- mensuel, garder 2
+
+Lancer une sauvegarde manuellement.
 
 # Plus d'infos
 
