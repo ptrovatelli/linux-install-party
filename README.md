@@ -1,5 +1,6 @@
 - [What is this project](#what-is-this-project)
 - [A apporter](#a-apporter)
+- [Vérification support windows 11](#vérification-support-windows-11)
 - [Vérification des problèmes connus](#vérification-des-problèmes-connus)
   - [Laptop](#laptop)
   - [Desktop](#desktop)
@@ -59,6 +60,10 @@ The audience is windows users, thus the linux mint distro.
   - Ecran, clavier, souris, cable HDMI, cable VGA
   - Disque dur externe
   
+
+# Vérification support windows 11
+
+Dans le doute, vérifier si le PC est compatible W11 : [pc health check](https://support.microsoft.com/fr-fr/windows/v%C3%A9rifier-si-un-appareil-r%C3%A9pond-%C3%A0-windows-11-configuration-requise-apr%C3%A8s-avoir-modifi%C3%A9-le-mat%C3%A9riel-de-l-appareil-f3bc0aeb-6884-41a1-ab57-88258df6812b)
 
 # Vérification des problèmes connus
 
