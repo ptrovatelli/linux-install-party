@@ -37,6 +37,10 @@ Plus d'infos: [Problèmes de sons sous Ubuntu](https://doc.ubuntu-fr.org/son_pro
 
 # Affichage
 
+## Docs de référence
+
+https://doc.ubuntu-fr.org/resolution_ecran_avance
+
 ## Plantage interface graphique Xorg / Wayland
 
 Basculer vers un tty avec ctrl + alt + F1 à F6 pour voir les logs sous `/var/log`
