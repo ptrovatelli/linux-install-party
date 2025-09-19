@@ -39,7 +39,9 @@ Plus d'infos: [Problèmes de sons sous Ubuntu](https://doc.ubuntu-fr.org/son_pro
 
 ## Docs de référence
 
-https://doc.ubuntu-fr.org/resolution_ecran_avance
+[basique](https://doc.ubuntu-fr.org/configurer_son_ecran)
+
+[avancé](https://doc.ubuntu-fr.org/resolution_ecran_avance)
 
 ## Plantage interface graphique Xorg / Wayland
 
@@ -47,4 +49,9 @@ Basculer vers un tty avec ctrl + alt + F1 à F6 pour voir les logs sous `/var/lo
 
 Revenir vers le bureau avec ctrl + alt + F7
 
-Le paramètre de boot `nomodeset` semble régler pas mal de soucis de cartes graphiques qui causent des écrans noirs et/ou plantage Xorg (à changer dans les options du grub)
+### nomodeset
+
+Le paramètre de boot `nomodeset` semble régler pas mal de soucis de cartes graphiques qui causent des écrans noirs et/ou plantage Xorg (à changer dans les options du grub) mais ce n'est pas une solution miracle car apporte beaucoup d'inconvénients, notamment: 
+
+- pas d'accélération matérielle
+- pas possible de régler la résolution

@@ -24,11 +24,11 @@
 - [Vérifier la clé usb](#vérifier-la-clé-usb)
 - [Booter sur la clé USB](#booter-sur-la-clé-usb)
 - [Checklist de bon fonctionnement (en live USB)](#checklist-de-bon-fonctionnement-en-live-usb)
-- [Checklist de bon fonctionnement (après install)](#checklist-de-bon-fonctionnement-après-install)
 - [Post-install](#post-install)
   - [Tuning des miroirs (mint)](#tuning-des-miroirs-mint)
   - [Vérification des sources logicielles (ubuntu)](#vérification-des-sources-logicielles-ubuntu)
   - [Mises à jour](#mises-à-jour)
+  - [Checklist de bon fonctionnement après install](#checklist-de-bon-fonctionnement-après-install)
   - [Installation logiciels supplémentaires](#installation-logiciels-supplémentaires)
   - [Import des données](#import-des-données)
   - [Configuration timeshift](#configuration-timeshift)
@@ -178,6 +178,7 @@ https://rufus.ie/fr/
 - Popup à la fin mode ISO vs DD
   - Pour mint: choisir ISO
   - Pour debian: choisir DD (troubleshooting plantage sur "chargement des composants depuis le support d'installation")
+  - Pour ubuntu: choisir DD (ne boot pas sinon)
 
 
 ### BalenaEtcher
@@ -203,25 +204,22 @@ md5sum -c mdsum.txt
 
 # Booter sur la clé USB
 
-- Bios hotkey: paramètres BIOS complets
-- Boot menu key: juste pour sélectionner un media de démarrage une fois
-
-| Manufacturer       | BIOS Hotkey | Boot Menu Key                   | Alternative Keys |
-| ------------------ | ----------- | ------------------------------- | ---------------- |
-| Acer               | F2          | F12                             | Del              |
-| Asus               | F2          | Esc                             | Del              |
-| Dell               | F2          | F12                             |                  |
-| Gateway            | F2          | F12                             |                  |
-| Gigabyte           | Del         | F12                             | F2               |
-| HP                 | Esc, F10    | F9                              |                  |
-| Lenovo (Consumer)  | F2          | F12                             | Fn + F2          |
-| Lenovo (ThinkPads) | Enter, F1   | F12                             |                  |
-| MSI                | Del         | F11                             |                  |
-| Sony               | F2          | Assist button (for VAIO models) |                  |
-| Toshiba            | F2          | F12                             | Esc              |
-| Samsung            | F2          | Esc                             | F12              |
-| Fujitsu            | F2          | F12                             |                  |
-| Intel NUC          | F2          | F10                             |                  |
+| Manufacturer       | Bios configuration | Boot Menu                       | Alternative Keys |
+| ------------------ | ------------------ | ------------------------------- | ---------------- |
+| Acer               | F2                 | F12                             | Del              |
+| Asus               | F2                 | Esc                             | Del              |
+| Dell               | F2                 | F12                             |                  |
+| Gateway            | F2                 | F12                             |                  |
+| Gigabyte           | Del                | F12                             | F2               |
+| HP                 | Esc, F10           | F9                              |                  |
+| Lenovo (Consumer)  | F2                 | F12                             | Fn + F2          |
+| Lenovo (ThinkPads) | Enter, F1          | F12                             |                  |
+| MSI                | Del                | F11                             |                  |
+| Sony               | F2                 | Assist button (for VAIO models) |                  |
+| Toshiba            | F2                 | F12                             | Esc              |
+| Samsung            | F2                 | Esc                             | F12              |
+| Fujitsu            | F2                 | F12                             |                  |
+| Intel NUC          | F2                 | F10                             |                  |
 
 [Ref](https://pendrivelinux.com/how-to-access-bios/)
 
@@ -240,10 +238,6 @@ md5sum -c mdsum.txt
 - Brancher un moniteur externe HDMI ou VGA (si besoin)
 - Bluetooth (si besoin)
 - Lecteur de carte SD (si besoin)
-
-# Checklist de bon fonctionnement (après install)
-
-Refaire une passe rapide sur les vérifications déjà faite en live USB
 
 # Post-install
 
@@ -267,6 +261,10 @@ et choisir : télécharger depuis : Serveur pour France
 ## Mises à jour
 
 Mettre à jour et rebooter.
+
+## Checklist de bon fonctionnement après install
+
+Refaire une passe rapide sur les vérifications déjà faite en live USB
 
 ## Installation logiciels supplémentaires
 
