@@ -15,6 +15,8 @@
   - [Télécharger la distribution](#télécharger-la-distribution)
     - [Linux mint](#linux-mint)
     - [Debian](#debian)
+    - [Ubuntu](#ubuntu)
+  - [Vérifier le téléchargement](#vérifier-le-téléchargement)
 - [Préparation de la clé USB](#préparation-de-la-clé-usb)
   - [Sur windows](#sur-windows)
     - [BalenaEtcher vs Rufus](#balenaetcher-vs-rufus)
@@ -57,8 +59,9 @@ The audience is windows users, thus the linux mint distro.
   - Fiches programmes linux
 - Autres
   - Ecouteurs (pour diagnostiquer problèmes de son)
-  - Ecran, clavier, souris, cable HDMI, cable VGA
+  - Ecran, clavier, souris, cable HDMI, cable VGA, hub USB
   - Disque dur externe
+  - Multi-prise, rallonge
   
 
 # Vérification support windows 11
@@ -135,12 +138,23 @@ Noter les caractéristiques:
 (c'est un choix de notre part de privilégier Linux mint, il y a bien sur plein d'autres choix valables qui ne sont pas listés ici)
 
 - 64-bits architecture amd64 ou intel64:
-  - cpu >= dual core 1.6GB et RAM >= 4GB: **Linux mint mate** (estimation, pas de source officielle?)
+  - cpu >= dual core 2GB et RAM >= 4GB: **Linux mint mate** (estimation, pas de source officielle pour chaque flavor) (1)
   - sinon: **Linux mint xfce**
 - 32-bits architecture armhf ([avec l'architecture ARMv7 / VFPv3](https://www.debian.org/releases/stable/armhf/ch02s01.en.html)) : **Debian**
-
 - 64-bits autres architectures : voir https://www.debian.org/releases/stable/
 - 32-bits autres architectures: **pas de solution?**
+
+
+
+(1) [requirements linux mint](https://linuxmint.com/faq.php#:~:text=2GB%20RAM%20(4GB%20recommended%20for,t%20fit%20in%20the%20screen).):
+
+- 2GB RAM (4GB recommended for a comfortable usage).
+- 20GB of disk space (100GB recommended).
+- 1024×768 resolution (on lower resolutions, press ALT to drag windows with the mouse if they don’t fit in the screen).
+
+
+
+Pour référence, [pré-requis Ubuntu 24.04](https://ubuntu.com/download/desktop): 2GHz dual core, 4GB RAM
 
 ##  Télécharger la distribution
 
@@ -154,6 +168,30 @@ Préférer la distribution full "DVD" pas la netinst "CD". La netinst nécessite
 
 **Lien de téléchargement debian 32-bits armhf:** https://cdimage.debian.org/debian-cd/current/armhf/iso-dvd/
 
+### Ubuntu
+
+- [Download](https://ubuntu.com/download/desktop)
+
+- [Checksum du fichier iso](https://releases.ubuntu.com/) (cliquer sur la bonne version, puis télécharger le fichier `SHA256SUMS`)
+
+## Vérifier le téléchargement
+
+Linux: 
+
+```
+sha256sum xxx.iso
+```
+
+
+
+Windows:
+
+```
+ certUtil -hashfile xxx.iso SHA256
+```
+
+
+
 # Préparation de la clé USB
 
 ## Sur windows
@@ -163,8 +201,11 @@ Préférer la distribution full "DVD" pas la netinst "CD". La netinst nécessite
 Utiliser Etcher ou Rufus:
 
 - Etcher est plus simple d'usage (mais parfois moins stable?)
+  - Ubuntu préconise etcher
 
 - Rufus a plus d'options et est plus léger
+  - Linux mint préconise Rufus
+
 
 ### Rufus
 
@@ -190,7 +231,7 @@ https://etcher.balena.io/#download-etcher
 - Linux mint:
   - utiliser *Créateur de clé USB* (*USB image writer*) installé par défaut
 - Debian, Ubuntu: 
-  - balenas etcher. Utiliser le fichier[zip file](https://etcher.balena.io/#download-etcher) qu'on décompresse pour utiliser sur place, pas le .deb (problèmes de dépendances)
+  - balenas etcher. Utiliser le [fichier zip](https://etcher.balena.io/#download-etcher) qu'on décompresse pour utiliser sur place, pas le .deb (problèmes de dépendances)
 
 # Vérifier la clé usb
 

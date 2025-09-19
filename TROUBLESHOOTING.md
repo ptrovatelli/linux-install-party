@@ -31,7 +31,7 @@ Solution: faire la clé en mode "dd" avec rufus au lieu de "iso" (popup après l
 
 - Ouvrir alsamixer et essayer différents canaux
 
-- Essayer avec des écouteurs (souci carte son vs souci hauts-parleurs)
+- Essayer avec des écouteurs
 
 Plus d'infos: [Problèmes de sons sous Ubuntu](https://doc.ubuntu-fr.org/son_problemes)
 
