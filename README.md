@@ -17,13 +17,15 @@
     - [Debian](#debian)
     - [Ubuntu](#ubuntu)
   - [Vérifier le téléchargement](#vérifier-le-téléchargement)
-- [Préparation de la clé USB](#préparation-de-la-clé-usb)
-  - [Sur windows](#sur-windows)
-    - [BalenaEtcher vs Rufus](#balenaetcher-vs-rufus)
-    - [Rufus](#rufus)
-    - [BalenaEtcher](#balenaetcher)
-  - [Sur linux](#sur-linux)
-- [Vérifier la clé usb](#vérifier-la-clé-usb)
+- [Clé usb](#clé-usb)
+  - [Préparation de la clé USB](#préparation-de-la-clé-usb)
+    - [Sur windows](#sur-windows)
+      - [BalenaEtcher vs Rufus](#balenaetcher-vs-rufus)
+      - [Rufus](#rufus)
+      - [BalenaEtcher](#balenaetcher)
+    - [Sur linux](#sur-linux)
+  - [Vérifier le contenu de la clé usb](#vérifier-le-contenu-de-la-clé-usb)
+  - [Vérification clé usb endommagée](#vérification-clé-usb-endommagée)
 - [Booter sur la clé USB](#booter-sur-la-clé-usb)
 - [Checklist de bon fonctionnement (en live USB)](#checklist-de-bon-fonctionnement-en-live-usb)
 - [Post-install](#post-install)
@@ -192,11 +194,13 @@ Windows:
 
 
 
-# Préparation de la clé USB
+# Clé usb
 
-## Sur windows
+## Préparation de la clé USB
 
-### BalenaEtcher vs Rufus
+### Sur windows
+
+#### BalenaEtcher vs Rufus
 
 Utiliser Etcher ou Rufus:
 
@@ -207,7 +211,7 @@ Utiliser Etcher ou Rufus:
   - Linux mint préconise Rufus
 
 
-### Rufus
+#### Rufus
 
 https://rufus.ie/fr/
 
@@ -222,18 +226,18 @@ https://rufus.ie/fr/
   - Pour ubuntu: choisir DD (ne boot pas sinon)
 
 
-### BalenaEtcher
+#### BalenaEtcher
 
 https://etcher.balena.io/#download-etcher
 
-## Sur linux
+### Sur linux
 
 - Linux mint:
   - utiliser *Créateur de clé USB* (*USB image writer*) installé par défaut
 - Debian, Ubuntu: 
   - balenas etcher. Utiliser le [fichier zip](https://etcher.balena.io/#download-etcher) qu'on décompresse pour utiliser sur place, pas le .deb (problèmes de dépendances)
 
-# Vérifier la clé usb
+## Vérifier le contenu de la clé usb
 
 Si pas dejà fait (Etcher le fait)
 
@@ -242,6 +246,24 @@ md5sum -c mdsum.txt
 ```
 
 (en cas d'erreur, un message apparait à la fin)
+
+## Vérification clé usb endommagée
+
+Dans le doute, on peut vérifier si la clé est endommagée. Prévoir 30mn environ pour une clé de 8GB
+
+Vérifier la taille des blocks: 
+
+```
+blockdev --getbsz /dev/sdX
+```
+
+Ecrire des blocks aléatoires et vérifier le résultat:
+
+```
+badblocks -w -s -o error.log -b <block_size> -t random /dev/sdX
+```
+
+
 
 # Booter sur la clé USB
 
