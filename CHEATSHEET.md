@@ -1,26 +1,26 @@
 # Langues
 
-### Disposition du clavier
+## Disposition du clavier
 
-- En ligne de commande: 
+- Dans linux mint: 
+  - Menu / keyboard / layout / keyboard layout
+    - Ajouter `French (AZERTY)`
+    - Le sélectionner en cliquant sur le drapeau en bas à droite
+- En ligne de commande (par exemple pour finnix): 
 
 ```
 loadkeys fr
 ```
 
-- Dans linux mint: 
-  - Menu / keyboard / layout / keyboard layout
-    - Choisir `French (AZERTY)`
+## Langue de linux mint
 
-# Langue de linux mint
-
-- Menu / Language settings
-  - Language: `French, France`
+- Menu / Langage settings
+  - Langage: `French, France`
   - Region: `French, France`
   - Time format: `French, France`
   - System locale : cliquer sur `Apply System-Wide`
 
-NB: certains éléments ne seront pas modifiés avant une re-ouverture de session
+Fermer/rouvrir la session pour la mise à jour (pas de souci en live USB, on peut rouvrir une session)
 
 # Finnix
 

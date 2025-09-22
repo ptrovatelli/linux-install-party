@@ -27,6 +27,7 @@
   - [Vérifier le contenu de la clé usb](#vérifier-le-contenu-de-la-clé-usb)
   - [Vérification clé usb endommagée](#vérification-clé-usb-endommagée)
 - [Booter sur la clé USB](#booter-sur-la-clé-usb)
+- [Changer la langue et la disposition du clavier](#changer-la-langue-et-la-disposition-du-clavier)
 - [Checklist de bon fonctionnement (en live USB)](#checklist-de-bon-fonctionnement-en-live-usb)
 - [Post-install](#post-install)
   - [Tuning des miroirs (mint)](#tuning-des-miroirs-mint)
@@ -285,6 +286,10 @@ badblocks -w -s -o error.log -b <block_size> -t random /dev/sdX
 | Intel NUC          | F2                 | F10                             |                  |
 
 [Ref](https://pendrivelinux.com/how-to-access-bios/)
+
+# Changer la langue et la disposition du clavier
+
+cf [cheatsheet](CHEATSHEET.md#langues)
 
 # Checklist de bon fonctionnement (en live USB)
 
