@@ -10,7 +10,7 @@ Au moment de booter sur la clé, rien ne s'affiche à part un tiret blanc qui cl
 
 Autres pistes: 
 
-- Assurez-vous que le BIOS est en UEFI si disponible (pas en Legacy)
+- Assurez-vous que l'UEFI dans les options du bios si disponible (pas en Legacy)
 - Si UEFI n'est pas disponible pour cette machine, assurez-vous que le disque est bien partitionné en MBR avec [finnix](CHEATSHEET.md#finnix)
 
 - Désactiver le Secure Boot, désactiver les « Windows Optimized Defaults » ou d’autres options similaires.
@@ -24,6 +24,12 @@ La clé USB faite avec rufus boot bien et lance l'installation, mais lorsqu'il f
 Solution: faire la clé en mode "dd" avec rufus au lieu de "iso" (popup après les options de configuration)
 
 
+
+# Pilotes alternatifs
+
+Ouvrir l'application *Gestionnaire de pilotes* (*Driver manager*) pour voir si des pilotes alternatifs sont disponibles
+
+[Plus d'infos sur les pilotes en général](https://ubuntu-fr.com/Materiel-et-Pilotes/1697293168-Gestion-des-pilotes-sous-Ubuntu-le-guide-complet.html)
 
 # Son
 
@@ -48,6 +54,8 @@ Plus d'infos: [Problèmes de sons sous Ubuntu](https://doc.ubuntu-fr.org/son_pro
 Basculer vers un tty avec ctrl + alt + F1 à F6 pour voir les logs sous `/var/log`
 
 Revenir vers le bureau avec ctrl + alt + F7
+
+(parfois le bureau n'est pas sur le numéro 7)
 
 ### nomodeset
 
