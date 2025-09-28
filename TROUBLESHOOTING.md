@@ -1,6 +1,8 @@
-# Problèmes connus
+# Pilotes alternatifs
 
-Voir si des problèmes sont connus avec le matériel qui dysfonctionne: [hardware support wiki](https://wiki.ubuntu.com/HardwareSupport/)
+Ouvrir l'application *Gestionnaire de pilotes* (*Driver manager*) pour voir si des pilotes alternatifs sont disponibles
+
+[Plus d'infos sur les pilotes en général](https://ubuntu-fr.com/Materiel-et-Pilotes/1697293168-Gestion-des-pilotes-sous-Ubuntu-le-guide-complet.html)
 
 # Boot
 
@@ -24,12 +26,6 @@ La clé USB faite avec rufus boot bien et lance l'installation, mais lorsqu'il f
 Solution: faire la clé en mode "dd" avec rufus au lieu de "iso" (popup après les options de configuration)
 
 
-
-# Pilotes alternatifs
-
-Ouvrir l'application *Gestionnaire de pilotes* (*Driver manager*) pour voir si des pilotes alternatifs sont disponibles
-
-[Plus d'infos sur les pilotes en général](https://ubuntu-fr.com/Materiel-et-Pilotes/1697293168-Gestion-des-pilotes-sous-Ubuntu-le-guide-complet.html)
 
 # Son
 
@@ -63,3 +59,9 @@ Le paramètre de boot `nomodeset` semble régler pas mal de soucis de cartes gra
 
 - pas d'accélération matérielle
 - pas possible de régler la résolution
+
+# Wifi
+
+##  Problèmes connus
+
+Cf https://doc.ubuntu-fr.org/wifi_liste_carte
