@@ -61,6 +61,8 @@ chroot /mnt passwd
 
 ## Vérifier et réparer le disque
 
+(pour une partition historisée ext2/ext3/ext4)
+
 ```
 fsck -y /dev/sda3
 ```
@@ -163,3 +165,21 @@ https://doc.ubuntu-fr.org/scanner
 ## Imprimantes
 
 https://doc.ubuntu-fr.org/imprimante
+
+# Disque
+
+## Vérifier erreurs de disque (linux)
+
+Pour des partitions historisées uniquement (ext2/ext3/ext4)
+
+- Ouvrir l'application "Disques"
+- regarder "estimation"
+- pour plus d'infos: "..." / données smart et autotest
+
+Ou: 
+
+- Installer/ouvrir gsmartcontrol
+
+## Vérifier erreurs de disque (windows)
+
+Installer CrystalDiskInfo
