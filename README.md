@@ -268,22 +268,23 @@ badblocks -w -s -o error.log -b <block_size> -t random /dev/sdX
 
 # Booter sur la clé USB
 
-| Manufacturer       | Bios configuration | Boot Menu                       | Alternative Keys |
-| ------------------ | ------------------ | ------------------------------- | ---------------- |
-| Acer               | F2                 | F12                             | Del              |
-| Asus               | F2                 | Esc                             | Del              |
-| Dell               | F2                 | F12                             |                  |
-| Gateway            | F2                 | F12                             |                  |
-| Gigabyte           | Del                | F12                             | F2               |
-| HP                 | Esc, F10           | F9                              |                  |
-| Lenovo (Consumer)  | F2                 | F12                             | Fn + F2          |
-| Lenovo (ThinkPads) | Enter, F1          | F12                             |                  |
-| MSI                | Del                | F11                             |                  |
-| Sony               | F2                 | Assist button (for VAIO models) |                  |
-| Toshiba            | F2                 | F12                             | Esc              |
-| Samsung            | F2                 | Esc                             | F12              |
-| Fujitsu            | F2                 | F12                             |                  |
-| Intel NUC          | F2                 | F10                             |                  |
+| Manufacturer        | Bios configuration | Boot Menu                       | Alternative Keys |
+| ------------------- | ------------------ | ------------------------------- | ---------------- |
+| Acer                | F2                 | F12                             | Del              |
+| Asus                | F2                 | Esc                             | Del              |
+| Dell                | F2                 | F12                             |                  |
+| Gateway             | F2                 | F12                             |                  |
+| Gigabyte            | Del                | F12                             | F2               |
+| HP                  | Esc, F10           | F9                              |                  |
+| Lenovo (Consumer)   | F2                 | F12                             | Fn + F2          |
+| Lenovo (ThinkPads)  | Enter, F1          | F12                             |                  |
+| MSI                 | Del                | F11                             |                  |
+| Sony                | F2                 | Assist button (for VAIO models) |                  |
+| Toshiba             | F2                 | F12                             | Esc              |
+| Samsung             | F2                 | Esc                             | F12              |
+| Fujitsu             | F2                 | F12                             |                  |
+| Intel NUC           | F2                 | F10                             |                  |
+| Apple (Macbook pro) |                    | Option (Alt)                    |                  |
 
 [Ref](https://pendrivelinux.com/how-to-access-bios/)
 
@@ -297,15 +298,16 @@ cf [cheatsheet](CHEATSHEET.md#langues)
 - Accès internet en WIFI
 - Accès internet en ethernet (si possible)
 - Accéder à un site internet en https (ex `https://google.com`)
-- Carte son: jouer une vidéo sur youtube
+- Carte son: jouer une vidéo sur youtube.
+- Sortie jack: brancher des écouteurs (si besoin)
 - GPU:
   - Vérifier que la carte graphique apparait dans hardinfo (installer hardinfo)
   - Faire bouger rapidement une fenêtre.
   - Dans le doute faire un test avec [furmark](https://www.materiel.net/guide-achat/g8-les-cartes-graphiques/10006/)
-- Mise en veille: mettre l'ordinateur en veille. S'assurer que le disque dur ne tourne plus / que le système n'est plus sous tension (au bruit). Sortir l'ordinateur de la veille.
 - Brancher un moniteur externe HDMI ou VGA (si besoin)
 - Bluetooth (si besoin)
 - Lecteur de carte SD (si besoin)
+- Mise en veille: mettre l'ordinateur en veille. S'assurer que le disque dur ne tourne plus / que le système n'est plus sous tension (au bruit). Sortir l'ordinateur de la veille.
 
 # Post-install
 
