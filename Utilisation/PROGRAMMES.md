@@ -10,19 +10,19 @@ Remarques:
 
 ## Utilisation quotidienne
 
-| Faire quoi                                 | Linux mint                                                   | Ubuntu                | Windows                           |
-| ------------------------------------------ | ------------------------------------------------------------ | --------------------- | --------------------------------- |
-| Trouver et installer des applications      | Logithèque                                                   | Centre d'applications | Centre logiciel / Microsoft store |
-| Navigateur internet                        | Firefox (1)                                                  | ''                    | *Chrome*, *Firefox*, Edge         |
-| Naviguer dans les fichiers / dossiers      | - Thunar (xfce)<br/>- Navigateur de fichiers (Mate)<br/>- Fichiers (Cinnamon) | Nautilus ("Fichiers") | Explorateur de fichiers           |
-| Ouvrir un PDF                              | Visionneur de documents                                      | ''                    | *Adobe Acrobat Reader*            |
-| Modification de fichiers PDF               | *Master PDF Editor*                                          | ''                    | *Adobe Acrobat Pro*               |
-| Modifier un fichier texte simple           | Editeur de texte                                             | ''                    | Notepad                           |
-| Client Messagerie emails                   | Thunderbird                                                  | ''                    | Microsoft outlook                 |
-| Coffre-fort de mots de passe               | - Mots de passe et clés<br/>- *KeepassXC*<br/>- *OneKeePass* | ''                    | *KeePass*                         |
-| Exécution de commande en ligne de commande | Terminal                                                     | ''                    | Invite de commande / Powershell   |
-| Télécharger des fichiers torrent           | Transmission                                                 | ''                    | *Utorrent*                        |
-| Compresser ou décompresser des fichiers    | Gestionnaire d'archives                                      | File roller           | *7-zip*                           |
+| Faire quoi                                 | Linux mint                                                   | Ubuntu                | Windows                                 |
+| ------------------------------------------ | ------------------------------------------------------------ | --------------------- | --------------------------------------- |
+| Trouver et installer des applications      | Logithèque                                                   | Centre d'applications | Centre logiciel / Microsoft store       |
+| Navigateur internet                        | Firefox (1)                                                  | ''                    | *Chrome*, *Firefox*, Edge               |
+| Naviguer dans les fichiers / dossiers      | - Thunar (xfce)<br/>- Navigateur de fichiers (Mate)<br/>- Fichiers (Cinnamon) | Nautilus ("Fichiers") | Explorateur de fichiers                 |
+| Ouvrir un PDF                              | Visionneur de documents                                      | ''                    | *Adobe Acrobat Reader*                  |
+| Modification de fichiers PDF               | *Master PDF Editor*                                          | ''                    | *Adobe Acrobat Pro*                     |
+| Modifier un fichier texte simple           | Editeur de texte                                             | ''                    | Notepad                                 |
+| Client Messagerie emails                   | Thunderbird                                                  | ''                    | Microsoft outlook                       |
+| Coffre-fort de mots de passe               | - Mots de passe et clés<br/>- *KeepassXC*<br/>- *OneKeePass* | ''                    | *KeePass*                               |
+| Exécution de commande en ligne de commande | Terminal                                                     | ''                    | - Invite de commandes<br/> - Powershell |
+| Télécharger des fichiers en torrent        | Transmission                                                 | ''                    | *Utorrent*                              |
+| Compresser ou décompresser des fichiers    | Gestionnaire d'archives                                      | File roller           | *7-zip*                                 |
 
 
 
@@ -43,16 +43,16 @@ Remarques:
 
 ## Medias
 
-| Faire quoi                                                   | Linux mint                        | Ubuntu            | Windows                     |
-| ------------------------------------------------------------ | --------------------------------- | ----------------- | --------------------------- |
-| Afficher des images et modifications très simples (rotation) | Visionneur d'images               | ''                | Photos                      |
-| Gérer une bibliothèque de photos / images                    | Pix                               | Shotwell          | *Google photos (ex Picasa)* |
-| Dessin (simple)                                              | Dessin                            | Libre Office Draw | Paint                       |
-| Dessin / schémas                                             | Libre Office Draw (1)             | ''                | *Visio*                     |
-| Modification de photos / images avancée                      | *Gimp*                            | ''                | *Photoshop*                 |
-| Modification de photos avancée (format RAW)                  | - *RawTherapee*<br/>- *Darktable* | ''                | *Lightroom*                 |
-| Ecouter de la musique                                        | Rhythmbox                         | ''                | Windows media player        |
-| Voir des vidéos                                              | Celluloid                         | Vidéos            | Windows media player        |
+| Faire quoi                                                   | Linux mint                        | Ubuntu            | Windows                                   |
+| ------------------------------------------------------------ | --------------------------------- | ----------------- | ----------------------------------------- |
+| Afficher des images et modifications très simples (rotation) | Visionneur d'images               | ''                | Photos                                    |
+| Gérer une bibliothèque de photos / images                    | Pix                               | Shotwell          | *Google photos<br/>(anciennement Picasa)* |
+| Dessin (simple)                                              | Dessin                            | Libre Office Draw | Paint                                     |
+| Dessin / schémas                                             | Libre Office Draw (1)             | ''                | *Visio*                                   |
+| Modification de photos / images avancée                      | *Gimp*                            | ''                | *Photoshop*                               |
+| Modification de photos avancée (format RAW)                  | - *RawTherapee*<br/>- *Darktable* | ''                | *Lightroom*                               |
+| Ecouter de la musique                                        | Rhythmbox                         | ''                | - Windows media player<br/>- *Winamp*     |
+| Voir des vidéos                                              | Celluloid                         | Vidéos            | Windows media player                      |
 
 (1) Libre office draw permet aussi de lire les fichiers visio
 
@@ -64,8 +64,8 @@ Remarques:
 
 ## Administration
 
-| Faire quoi                          | Linux mint          | Ubuntu      | Windows            |      |
-| ----------------------------------- | ------------------- | ----------- | ------------------ | ---- |
-| Sauvegarder le système              | Timeshift           | *Timeshift* | Sauvegarde windows |      |
-| Sauvegarder les fichiers personnels | Outil de sauvegarde | Sauvegardes | Sauvegarde windows |      |
+| Faire quoi                          | Linux mint          | Ubuntu      | Windows            |
+| ----------------------------------- | ------------------- | ----------- | ------------------ |
+| Sauvegarder le système              | Timeshift           | *Timeshift* | Sauvegarde windows |
+| Sauvegarder les fichiers personnels | Outil de sauvegarde | Sauvegardes | Sauvegarde windows |
 
