@@ -37,7 +37,7 @@ Remarques:
 | Rédaction et mise en forme de texte             | Libre Office Writer  | ''                | Microsoft word       |
 | Tableur                                         | Libre Office Calc    | ''                | Microsoft Excel      |
 | Création de présentations / dispositives        | Libre Office Impress | ''                | Microsoft Powerpoint |
-| Editer des formules mathématique, des équations | *Libre office Math*  | Libre office Math |                      |
+| Editer des formules mathématique, des équations | *Libre office Math*  | Libre office Math | Microsoft word       |
 
 
 
@@ -58,14 +58,14 @@ Remarques:
 
 ## Périphériques
 
-| Faire quoi          | Linux Mint                              | Ubuntu | Windows |
-| ------------------- | --------------------------------------- | ------ | ------- |
-| Utiliser un scanner | - Numériseur de documents<br/>- *Xsane* | ''     | -       |
+| Faire quoi          | Linux Mint                              | Ubuntu | Windows                  |
+| ------------------- | --------------------------------------- | ------ | ------------------------ |
+| Utiliser un scanner | - Numériseur de documents<br/>- *Xsane* | ''     | Logiciel du constructeur |
 
 ## Administration
 
-| Faire quoi                          | Linux mint          | Ubuntu      | Windows |      |
-| ----------------------------------- | ------------------- | ----------- | ------- | ---- |
-| Sauvegarder le système              | Timeshift           | *Timeshift* |         |      |
-| Sauvegarder les fichiers personnels | Outil de sauvegarde | Sauvegardes |         |      |
+| Faire quoi                          | Linux mint          | Ubuntu      | Windows            |      |
+| ----------------------------------- | ------------------- | ----------- | ------------------ | ---- |
+| Sauvegarder le système              | Timeshift           | *Timeshift* | Sauvegarde windows |      |
+| Sauvegarder les fichiers personnels | Outil de sauvegarde | Sauvegardes | Sauvegarde windows |      |
 
