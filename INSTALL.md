@@ -1,4 +1,3 @@
-- [What is this project](#what-is-this-project)
 - [A apporter](#a-apporter)
 - [Vérification support windows 11](#vérification-support-windows-11)
 - [Vérification des problèmes connus](#vérification-des-problèmes-connus)
@@ -344,17 +343,3 @@ cf [import des données](IMPORT_DONNEES.md)
 Configurer timeshift: 
 
 - mensuel, garder 2
-
-# Plus d'infos
-
-## Dépannage
-
-cf [Dépannage](TROUBLESHOOTING.md)
-
-## Cheatsheet
-
-cf [Cheatsheet](CHEATSHEET.md)
-
-## Autres sources d'info sur les linux install party
-
-Voir aussi [cette page](https://docs.lacontrevoie.fr/activites/ateliers/install-party/) qui est très bien faite
