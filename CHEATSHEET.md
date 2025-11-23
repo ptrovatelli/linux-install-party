@@ -32,6 +32,31 @@ Fermer/rouvrir la session avec "Log out" pour prise en compte (pas de souci en l
 - Dans *Welcome to ubuntu* choisir la bonne langue
 - Fermer/rouvrir la session avec "Log out" pour prise en compte (pas de souci en live USB, on peut rouvrir une session rapidement)
 
+# Linux mint vs Ubuntu vs Debian version
+
+Ref distros: 
+
+- `/etc/debian_version` 
+- https://askubuntu.com/questions/445487/what-debian-version-are-the-different-ubuntu-versions-based-on
+- https://fr.wikipedia.org/wiki/Linux_Mint#GNOME_:_MATE_et_Cinnamon
+
+Ref kernels: 
+
+- `uname -a`
+
+- https://linuxmint.com/rel_zara.php, https://www.linuxmint.com/rel_wilma_whatsnew.php
+- https://canonical.com/blog/canonical-releases-ubuntu-25-04-plucky-puffin
+
+| Linux mint version | Ubuntu version             | Debian version  | Default linux kernel |
+| ------------------ | -------------------------- | --------------- | -------------------- |
+| -                  | 25.04 (Plucky Puffin)      | 13 (trixie/sid) | 6.14                 |
+| -                  | 24.10 (Oracular Oriole)    | 13 (trixie/sid) | 6.14                 |
+| 22.2 LTS (Zara)    | 24.04.2 LTS (Noble Numbat) | 13 (trixie/sid) | 6.14                 |
+| 22.1 LTS (Xia)     | 24.04.1 LTS (Noble Numbat) | 13 (trixie/sid) | 6.8                  |
+| 22 LTS (Wilma)     | 24.04 LTS (Noble Numbat)   | 13 (trixie/sid) | 6.8                  |
+
+
+
 # Finnix
 
 ## Intro
