@@ -259,7 +259,11 @@ badblocks -w -s -o error.log -b <block_size> -t random /dev/sdX
 
 
 
-# Booter sur la clé USB
+# Booter sur la clé USB et configuration bios
+
+Si on veut simplifier l'installation, désactiver le secure boot dans le bios. Dans le cas contraire, l'installation des codecs multimédias supplémentaires nécessitera de configurer un mot de passe pour le secure boot.
+
+Ce n'est pas clair si le mot de passe devra être fourni dorénavant à chaque démarrage (plus d'info: [ubuntu wiki](https://wiki.ubuntu.com/UEFI/SecureBoot#The_user_installs_Ubuntu_on_a_new_system))
 
 | Manufacturer        | Bios configuration | Boot Menu                       | Alternative Keys |
 | ------------------- | ------------------ | ------------------------------- | ---------------- |
