@@ -65,3 +65,10 @@ Le paramètre de boot `nomodeset` semble régler pas mal de soucis de cartes gra
 ##  Problèmes connus
 
 Cf https://doc.ubuntu-fr.org/wifi_liste_carte
+
+# Auto login
+
+Si l'auto login ne fonctionne pas (demande le mot de passe au démarrage), aller dans 
+
+- Fenêtre de connexion / Utilisateurs / Connexion automatique
+  - Délai de connexion (en secondes) : 1 (au lieu de 0)
