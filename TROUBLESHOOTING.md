@@ -2,7 +2,7 @@
 
 Ouvrir l'application *Gestionnaire de pilotes* (*Driver manager*) pour voir si des pilotes alternatifs sont disponibles
 
-[Plus d'infos sur les pilotes en général](https://ubuntu-fr.com/Materiel-et-Pilotes/1697293168-Gestion-des-pilotes-sous-Ubuntu-le-guide-complet.html)
+[Plus d'infos sur les pilotes en général](https://ubuntu-fr.com/Materiel-Pilotes/1697293168-Gestion-des-pilotes-sous-Ubuntu-le-guide-complet.html)
 
 # Boot
 

@@ -1,6 +1,6 @@
 - [A apporter](#a-apporter)
 - [Vérification support windows 11](#vérification-support-windows-11)
-- [Vérification des problèmes connus](#vérification-des-problèmes-connus)
+- [Vérification des problèmes connus (optionnel)](#vérification-des-problèmes-connus-optionnel)
   - [Laptop](#laptop)
   - [Desktop](#desktop)
   - [Imprimantes / scanners](#imprimantes--scanners)
@@ -25,21 +25,18 @@
     - [Sur linux](#sur-linux)
   - [Vérifier le contenu de la clé usb](#vérifier-le-contenu-de-la-clé-usb)
   - [Vérification clé usb endommagée](#vérification-clé-usb-endommagée)
-- [Booter sur la clé USB](#booter-sur-la-clé-usb)
+- [Booter sur la clé USB et configuration bios](#booter-sur-la-clé-usb-et-configuration-bios)
 - [Changer la langue et la disposition du clavier](#changer-la-langue-et-la-disposition-du-clavier)
 - [Checklist de bon fonctionnement (en live USB)](#checklist-de-bon-fonctionnement-en-live-usb)
 - [Post-install](#post-install)
   - [Tuning des miroirs (mint)](#tuning-des-miroirs-mint)
   - [Vérification des sources logicielles (ubuntu)](#vérification-des-sources-logicielles-ubuntu)
   - [Mises à jour](#mises-à-jour)
+  - [Vérification des pilotes alternatifs](#vérification-des-pilotes-alternatifs)
   - [Checklist de bon fonctionnement après install](#checklist-de-bon-fonctionnement-après-install)
   - [Installation logiciels supplémentaires](#installation-logiciels-supplémentaires)
   - [Import des données](#import-des-données)
   - [Configuration timeshift](#configuration-timeshift)
-- [Plus d'infos](#plus-dinfos)
-  - [Dépannage](#dépannage)
-  - [Cheatsheet](#cheatsheet)
-  - [Autres sources d'info sur les linux install party](#autres-sources-dinfo-sur-les-linux-install-party)
 
 # A apporter
 
@@ -64,7 +61,7 @@
 
 Dans le doute, vérifier si le PC est compatible W11 : [pc health check](https://support.microsoft.com/fr-fr/windows/v%C3%A9rifier-si-un-appareil-r%C3%A9pond-%C3%A0-windows-11-configuration-requise-apr%C3%A8s-avoir-modifi%C3%A9-le-mat%C3%A9riel-de-l-appareil-f3bc0aeb-6884-41a1-ab57-88258df6812b)
 
-# Vérification des problèmes connus
+# Vérification des problèmes connus (optionnel)
 
 Vérifier si des problèmes sont connus sur ubuntu avec ce matériel
 
@@ -261,9 +258,11 @@ badblocks -w -s -o error.log -b <block_size> -t random /dev/sdX
 
 # Booter sur la clé USB et configuration bios
 
-Si on veut simplifier l'installation, désactiver le secure boot dans le bios. Dans le cas contraire, l'installation des codecs multimédias supplémentaires nécessitera de configurer un mot de passe pour le secure boot.
+Si on veut simplifier l'installation et si une sécurité forte n'est pas nécessaire, on peut désactiver le secure boot dans le bios (c'est parfois conseillé pour débugger des problèmes d'installation de pilote de carte graphique, des erreurs de boot etc).
 
-Ce n'est pas clair si le mot de passe devra être fourni dorénavant à chaque démarrage (plus d'info: [ubuntu wiki](https://wiki.ubuntu.com/UEFI/SecureBoot#The_user_installs_Ubuntu_on_a_new_system))
+Si on veut installer des codecs multimédias supplémentaires, le logiciel demande de configurer un mot de passe pour le secure boot si celui-ci n'est pas désactivé. Pas de panique le mot de passe ne sera pas demandé à chaque reboot futur, juste une fois au prochain reboot (et encore parfois pas du tout)
+
+Plus d'info: [ubuntu wiki](https://wiki.ubuntu.com/UEFI/SecureBoot#The_user_installs_Ubuntu_on_a_new_system)
 
 | Manufacturer        | Bios configuration | Boot Menu                       | Alternative Keys |
 | ------------------- | ------------------ | ------------------------------- | ---------------- |
@@ -300,7 +299,7 @@ cf [cheatsheet](CHEATSHEET.md#langues)
 - GPU:
   - Vérifier que la carte graphique apparait dans hardinfo (installer hardinfo)
   - Faire bouger rapidement une fenêtre.
-  - Dans le doute faire un test avec [furmark](https://www.materiel.net/guide-achat/g8-les-cartes-graphiques/10006/)
+  - Dans le doute faire un test "GPU drawing" dans hardinfo (score 2000-3000 pour un portable ça va)
 - Brancher un moniteur externe HDMI ou VGA (si besoin)
 - Bluetooth (si besoin)
 - Lecteur de carte SD (si besoin)
@@ -329,6 +328,14 @@ et choisir : télécharger depuis : Serveur pour France
 
 Mettre à jour et rebooter.
 
+## Vérification des pilotes alternatifs
+
+Sur la popup de premier démarrage, aller dans premiers pas / pilotes et vérifier si des pilotes alternatifs sont disponibles. C'est souvent le cas pour la carte graphique par exemple. 
+
+Si le pilote ne s'installe pas bien, remettre celui par défaut (le pilote générique) avant de redémarrer.
+
+**Il semble que les pilotes nvidia ne sont pas compatibles avec le secure boot (problème de signature des paquets).**
+
 ## Checklist de bon fonctionnement après install
 
 Refaire une passe rapide sur les vérifications déjà faite en live USB
@@ -336,7 +343,7 @@ Refaire une passe rapide sur les vérifications déjà faite en live USB
 ## Installation logiciels supplémentaires
 
 - Si besoin d'utiliser un scanner: xsane
-- [Teamviewer quicksupport](https://www.teamviewer.com/fr/download/linux/)
+- Si besoin de dépannage à distance: [Teamviewer quicksupport](https://www.teamviewer.com/fr/download/linux/)
 
 ## Import des données
 
